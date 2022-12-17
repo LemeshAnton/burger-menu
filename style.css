@@ -1,18 +1,14 @@
 body {
   padding: 20px;
 }
-header {
-  display: flex;
-  justify-content: flex-end;
+
+.header__menu li  {
+  list-style-type: none
 }
-.header__nav li a {
-  text-decoration: none;
+.header__menu li a  {
   color: white;
   font-size: 25px;
-}
-.header__nav li {
-  list-style-type: none;
-  
+  text-decoration: none;
 }
 .header__menu {
   position: fixed;
@@ -25,13 +21,18 @@ header {
   transform: translateX(-100%);
   transition: transform 0.5s;
 }
-.header__burger {
-  display: block;
+.header {
+  display: inline;
   position: relative;
-
   z-index: 2;
+  left: 95%;
 }
 
 .header__menu.active {
   transform: translateX(0);
+}
+.header__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
