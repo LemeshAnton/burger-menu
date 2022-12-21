@@ -44,17 +44,13 @@ body {
 }
 .section__title--open.open {
   display: inline;
-  z-index: 3;
-  position: relative;
-  font-size: 1.5em;
-  font-weight: bold;
 }
 
 .section__title--close.close {
   display: none;
 }
-.section__title--close {
-  display: inline;
+
+.section__title {
   z-index: 3;
   position: relative;
 }
