@@ -2,10 +2,10 @@ body {
   padding: 20px;
 }
 
-.header__menu li  {
-  list-style-type: none
+.header__menu li {
+  list-style-type: none;
 }
-.header__menu li a  {
+.header__menu li a {
   color: white;
   font-size: 25px;
   text-decoration: none;
@@ -27,7 +27,6 @@ body {
   z-index: 2;
   left: 95%;
 }
-
 .header__menu.active {
   transform: translateX(0);
 }
@@ -35,4 +34,27 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+.section {
+  text-align: center;
+  font-size: 30px;
+}
+.section__title--open {
+  display: none;
+}
+.section__title--open.open {
+  display: inline;
+  z-index: 3;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.section__title--close.close {
+  display: none;
+}
+.section__title--close {
+  display: inline;
+  z-index: 3;
+  position: relative;
 }
